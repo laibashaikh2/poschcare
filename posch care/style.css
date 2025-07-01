@@ -1,0 +1,120 @@
+.nav1 {
+    background-color: rgb(10, 9, 9);
+
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+ position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    flex-wrap: nowrap;
+
+ 
+}
+.nav1 a {
+    color: white !important;
+    text-decoration: none;
+    font-size: 15px;
+    text-align: center !important;
+
+}
+
+/* off canvas */
+
+.btne{
+    position: absolute;
+    top: 45px;
+    left: 10px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+.nav33 img{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+.main-mobile li {
+    list-style: none;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+      border: 0 solid gray;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ 
+}
+
+.vertical-nav a{
+    text-decoration: none;
+    text-decoration-style: none;
+    color: black;
+  
+}
+
+.vertical-nav a:hover {
+    color: orangered;
+}
+
+.icon1:hover img {
+    transform: scale(1.1);
+}
+
+
+
+.logo-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+}
+ .nav3{
+
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+   
+    text-decoration: none;
+   
+ }
+
+ .navb a {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    flex-wrap: nowrap;
+    background-color: transparent;
+    text-decoration-style: none;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+.navb a:hover {
+   cursor: pointer;
+   color: orangered;
+  }
+
+  .navb a.active1 {
+    color: green !important;
+  }
+.icon1 :hover{
+color: orangered !important;
+  }
+
+
