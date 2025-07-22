@@ -1,0 +1,423 @@
+body {
+  
+    padding: 0;
+    margin:0;
+    
+    
+}
+
+
+
+
+
+
+.nav1 {
+    background-color:#457b9d;
+
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+ position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    flex-wrap: nowrap;
+
+ 
+}
+.nav1 a {
+    
+    text-decoration: none;
+    font-size: 15px;
+    text-align: center !important;
+    text-transform: uppercase;
+
+}
+
+/* off canvas */
+
+.btne {
+  position: absolute;
+  top: 45px !important;
+  left: 10px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 20px;
+}
+
+.nav33 img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.main-mobile li {
+  list-style: none;
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.vertical-nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.vertical-nav a:hover {
+  color:#457b9d;
+}
+
+.icon1:hover img {
+  transform: scale(1.1);
+}
+
+
+.icon1:hover img {
+    transform: scale(1.1);
+}
+
+
+
+
+ .nav3{
+
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+   
+    text-decoration: none;
+   
+ }
+ /* All delay classes will take 2x longer to start */
+:root {
+  --animate-delay: 2s;
+}
+
+/* All delay classes will take half the time to start */
+:root {
+  --animate-delay: 0.5s;
+}
+
+ .navb a {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    flex-wrap: nowrap;
+    background-color: transparent;
+    text-decoration-style: none;
+    color: black;
+     font-family: "Bebas Neue", sans-serif !important;
+   
+ }
+.navb a:hover {
+   cursor: pointer;
+   color: #457b9d;
+   animation:animate__bounce ;
+  }
+
+  .navb a.active1 {
+    color:#457b9d !important;
+  }
+.icon1 :hover{
+color: #457b9d!important;
+  }
+  
+
+
+.card1{
+ border: none !important;
+ 
+}
+/* SECTION 2 */
+.text-center h1{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2em;
+    color: #457b9d;
+}
+.text-center:hover{
+    color: #e0e6ea;
+    cursor: pointer;
+}
+
+
+
+    .header h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    /* Features icons section */
+    .features {
+      padding: 40px 20px;
+      background-color: #f8f9fa;
+    }
+
+    .feature-icon {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: #007bff;
+    }
+
+    /* Product showcase carousel */
+    .product-carousel {
+      padding: 40px 20px;
+    }
+
+    /* Customer reviews section */
+    .reviews {
+      padding: 40px 20px;
+      background-color: #f8f9fa;
+    }
+
+    .review-card {
+      border: none;
+    }
+
+    /* Button styles */
+    .btn-custom {
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+    }
+    .btn-custom:hover {
+      background-color: #ff1493;
+      color: white;
+    }
+
+    /* Show more button */
+    .show-more {
+      margin-top: 20px;
+    }
+
+   
+      
+       .owl-theme img {
+            height:auto;
+        }
+
+    .card {
+  position: relative;
+}
+
+.card .hover-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  
+}
+
+.card:hover .hover-img {
+  opacity: 1;
+}
+
+.card:hover .default-img {
+  opacity: 0;
+}
+
+
+.BEST:hover{
+  color: #457b9d;
+ font-family: "Bebas Neue", sans-serif !important;
+
+ 
+
+}
+.para{
+  color:  grey;
+}
+
+
+.btn1{
+  background-color: #77accd !important;
+  color: white !important;
+  font-family: "Bebas Neue", sans-serif !important;
+ text-transform: uppercase !important;
+ border: 1px solid white;
+
+}
+.btn1:hover{
+  background-color:white !important;
+  color:black !important;
+   font-family: "Bebas Neue", sans-serif !important;
+ text-transform: capitalize !important;
+ border: 1px solid white;
+
+}
+
+
+
+
+
+.btn-pink {
+  background-color: #77accd !important;
+  color: #fff;
+  border-radius: 20px;
+  padding: 6px 16px;
+  font-weight: 500;
+  border: none;
+  transition: all 0.3s ease;
+}
+.btn-pink:hover {
+  background-color: #5f91b5; /* slightly darker on hover */
+  color: #fff;
+}
+.product-img1 img:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+}
+
+
+
+   .logo-row {
+      display: flex;
+      justify-content: space-between; /* space between logos */
+      align-items: center;
+      gap: 20px; /* optional spacing between logos */
+      max-width: 1200px;
+      margin: 20px auto;
+    }
+    .logo-row img {
+      max-width: 100px; /* adjust size as needed */
+      height: auto;
+    }
+    /* Make it responsive */
+    @media (max-width: 600px) {
+      .logo-row {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .logo-row img {
+        max-width: 60px;
+      }}
+
+
+
+
+      /* * ==========================
+   Footer Styling
+========================== */ */
+footer ul li {
+  margin-bottom: 10px;
+}
+
+footer .social-icons a {
+  font-size: 18px;
+}
+
+footer .social-icons a:hover {
+  color: rgb(8, 6, 5);
+}
+
+.social-icons a {
+  font-size: 20px;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+/* ==========================
+   Mobile Toggle Button
+========================== */
+.mobile-toggle {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  background-color: #fff;
+  border: none;
+  z-index: 1050;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.15);
+  font-size: 20px;
+}
+
+.mobile-toggle i {
+  color: #333;
+}
+
+
+@media (min-width: 992px) {
+  .mobile-toggle {
+    display: none;
+  }
+}
+
+
+/* Adjustments for tablets and below */
+@media (max-width: 768px) {
+  .product-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .btne {
+    top: 10px !important;
+    left: 10px;
+  }
+
+  .nav1 {
+    font-size: 13px;
+    padding: 5px 10px;
+  }
+
+  .banner img {
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+  }
+
+  footer .col-md-4 {
+    text-align: center;
+  }
+
+  footer .social-icons {
+    justify-content: center;
+    display: flex;
+  }
+
+  .main-mobile li {
+    font-size: 18px;
+    padding: 8px;
+  }
+
+  .offcanvas-header img {
+    width: 70px;
+  }
+
+  .logo {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .social-icons {
+    order: 1;
+    justify-content: center;
+  }
+
+  .logo-image1 {
+    order: 2;
+    position: static;
+    transform: none;
+    margin: 0 auto;
+  }
+
+  .icons {
+    order: 3;
+    justify-content: center;
+  }
+}
