@@ -2,7 +2,7 @@
    General Body Styling
 ========================== */
 body {
-  font-family: 'Poppins', sans-serif;
+   font-family: "Bebas Neue", sans-serif !important;
   background-color: white;
 }
 
@@ -97,7 +97,7 @@ body {
   background-color: transparent;
   text-decoration: none;
   color: black;
-  font-family: 'Lucida Sans', sans-serif;
+   font-family: "Bebas Neue", sans-serif !important;
 }
 
 .navb a:hover {
@@ -232,6 +232,9 @@ footer .social-icons a:hover {
 .mobile-toggle i {
   color: #333;
 }
+.Info{
+     font-family: "Bebas Neue", sans-serif !important;
+}
 
 @media (min-width: 992px) {
   .mobile-toggle {
@@ -347,4 +350,8 @@ footer .social-icons a:hover {
     width: 100%;
     margin-bottom: 8px;
   }
+
 }
+  
+
+
