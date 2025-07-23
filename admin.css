@@ -7,7 +7,7 @@
 }
 :root{
     /* ===== Colors ===== */
-    --primary-color: #0E4BF1;
+    --primary-color:var(--black-light-color);
     --panel-color: #FFF;
     --text-color: #000;
     --black-light-color: #707070;
@@ -48,17 +48,11 @@ body.dark{
     background: #faf7f7;
 }
 ::-webkit-scrollbar-thumb {
-    background: var(--primary-color);
+    background-color: #4DA3FF;
     border-radius: 12px;
     transition: all 0.3s ease;
 }
-::-webkit-scrollbar-thumb:hover {
-    background: #0b3cc1;
-}
-body.dark::-webkit-scrollbar-thumb:hover,
-body.dark .activity-data::-webkit-scrollbar-thumb:hover{
-    background: #3A3B3C;
-}
+
 nav{
     position: fixed;
     top: 0;
@@ -73,31 +67,8 @@ nav{
 nav.close{
     width: 73px;
 }
-nav .logo-name{
-    display: flex;
-    align-items: center;
-}
-nav .logo-image{
-    display: flex;
-    justify-content: center;
-    min-width: 45px;
-}
-nav .logo-image img{
-    width: 40px;
-    object-fit: cover;
-    border-radius: 50%;
-}
-nav .logo-name .logo_name{
-    font-size: 22px;
-    font-weight: 600;
-    color: var(--text-color);
-    margin-left: 14px;
-    transition: var(--tran-05);
-}
-nav.close .logo_name{
-    opacity: 0;
-    pointer-events: none;
-}
+
+
 nav .menu-items{
     margin-top: 40px;
     height: calc(100% - 90px);
