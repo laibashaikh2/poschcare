@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Add to Cart</title>
+  <link rel="stylesheet" href="addtocart.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<header class="header">
+  <h1>🛒 Your Shopping Cart</h1>
+</header>
+
+<main class="cart-container">
+  <table>
+    <thead>
+      <tr>
+        <th>Product</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Total</th>
+        <th>Remove</th>
+      </tr>
+    </thead>
+    <tbody id="cart-items">
+      <!-- JS will insert items here -->
+    </tbody>
+  </table>
+
+  <div class="cart-summary">
+    <h3>Total: <span id="cart-total">Rs.0</span></h3>
+    <button class="checkout-btn">Proceed to Checkout</button>
+  </div>
+</main>
+
+<script>
+  let cart = [
+    { id: 1, name: "Vitamin C Brightening Facewash", price: 4384, qty: 1 },
+    { id: 2, name: "Hyaluronic Acid Face Wash", price: 650, qty: 2 },
+        { id: 2, name: "Tea Tree & Neem Face Wash", price: 650, qty: 2 },
+                { id: 2, name: "Energizing Scrub Face Wash with Activated Charcoal", price: 650, qty: 2 },
+        { id: 2, name: "Vitamin C Glow Cream", price: 1490, qty: 2 },
+                { id: 2, name: "Aloe vera Gel", price: 1790, qty: 2 },
+
+
+
+  ];
+
+  function renderCart() {
+    let cartItems = document.getElementById("cart-items");
+    let total = 0;
+    cartItems.innerHTML = "";
+
+    cart.forEach(item => {
+      let row = document.createElement("tr");
+
+      row.innerHTML = `
+        <td>${item.name}</td>
+        <td>Rs.${item.price}</td>
+        <td><input type="number" min="1" value="${item.qty}" onchange="updateQty(${item.id}, this.value)"></td>
+        <td>Rs.${item.price * item.qty}</td>
+        <td><button onclick="removeItem(${item.id})" class="remove-btn"><i class="fa fa-trash"></i></button></td>
+      `;
+
+      cartItems.appendChild(row);
+      total += item.price * item.qty;
+    });
+
+    document.getElementById("cart-total").textContent = `Rs.${total}`;
+  }
+
+  function updateQty(id, qty) {
+    cart = cart.map(item => item.id === id ? { ...item, qty: parseInt(qty) } : item);
+    renderCart();
+  }
+
+  function removeItem(id) {
+    cart = cart.filter(item => item.id !== id);
+    renderCart();
+  }
+
+  renderCart();
+</script>
+
+</body>
+</html>
